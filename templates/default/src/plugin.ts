@@ -1,12 +1,12 @@
 import { MZFMPlugin } from "@mzfm/common"
 import { Hello } from "./commands/Hello"
 
-const PARAMS = {}
+const DEFUALT_PARAMS = {}
 const COMMANDS = {
   Hello,
 }
-export const PLUGIN: MZFMPlugin<typeof PARAMS, typeof COMMANDS> = {
+export const PLUGIN: MZFMPlugin<typeof DEFUALT_PARAMS, typeof COMMANDS> = {
   name: "{{pluginName}}",
-  params: PARAMS,
+  default_params: DEFUALT_PARAMS,
   commands: COMMANDS,
 }
