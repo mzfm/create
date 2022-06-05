@@ -25,5 +25,6 @@
   "dependencies": {
     "@mzfm/common": "github:mzfm/common"
   },
-  "license": "{{license}}"
+  "license": "{{license}}",
+  "private": true
 }
