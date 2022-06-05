@@ -1,5 +1,5 @@
 import { Game_Interpreter } from "rmmz"
-import { MZFMCommand, PluginCommandDocs, overrideMethod } from "@mzfm/common"
+import { MZFMCommand, PluginCommandDocs, overrideMethod, MZFMInterpreter } from "@mzfm/common"
 
 export interface HelloArgs {
   name: string
@@ -7,18 +7,19 @@ export interface HelloArgs {
 
 export const Hello: MZFMCommand<HelloArgs> = {
   setGlobal: true,
-  initialize: () => {
-    console.log("Initializing Hello")
+  initialize: (commandName: string) => {
+    console.log(`Initializing ${commandName}`)
     overrideMethod(
-      Game_Interpreter,
+      MZFMInterpreter,
       "setup",
       function (this: Game_Interpreter, original, ...args) {
         console.log("Setup")
         original.call(this, ...args)
       }
     )
+    return true
   },
-  run: function (args: HelloArgs) {
+  run: function (ctx, args) {
     const { name } = args
     console.log(`Hello, ${name}!`)
   },
