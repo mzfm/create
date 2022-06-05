@@ -17,7 +17,6 @@ export const Hello: MZFMCommand<HelloArgs> = {
         original.call(this, ...args)
       }
     )
-    return true
   },
   run: function (ctx, args) {
     const { name } = args
