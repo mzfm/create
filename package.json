@@ -11,7 +11,9 @@
     "lint": "eslint --ext .js,.ts ./",
     "prettier": "prettier --write ./src"
   },
-  "bin": "dist/cli.js",
+  "bin": {
+    "create": "dist/cli.js"
+  },
   "files": [
     "dist",
     "templates"
