@@ -1,5 +1,5 @@
 {
-  "name": "@mzfm/create",
+  "name": "@mzfm/create-plugin",
   "description": "NPM initializer for MZFM plugins.",
   "version": "1.0.0",
   "author": "Vilja <i@vilja.me>",
@@ -12,7 +12,7 @@
     "prettier": "prettier --write ./src"
   },
   "bin": {
-    "@mzfm/create": "dist/cli.js"
+    "@mzfm/create-plugin": "dist/cli.js"
   },
   "files": [
     "dist",
