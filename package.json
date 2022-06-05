@@ -12,7 +12,7 @@
     "prettier": "prettier --write ./src"
   },
   "bin": {
-    "create": "dist/cli.js"
+    "@mzfm/create": "dist/cli.js"
   },
   "files": [
     "dist",
