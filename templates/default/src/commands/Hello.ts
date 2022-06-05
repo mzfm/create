@@ -10,9 +10,9 @@ export const Hello: MZFMCommand<HelloArgs> = {
   initialize: (commandName: string) => {
     console.log(`Initializing ${commandName}`)
     overrideMethod(
-      MZFMInterpreter,
+      Game_Interpreter,
       "setup",
-      function (this: Game_Interpreter, original, ...args) {
+      function (this: MZFMInterpreter, original, ...args) {
         console.log("Setup")
         original.call(this, ...args)
       }
