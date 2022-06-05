@@ -10,7 +10,7 @@
     "prepublishOnly": "npm run clean && npm run build",
     "lint": "eslint --ext .js,.ts ./",
     "prettier": "prettier --write ./src",
-    "install": "npm run build"
+    "prepare": "npm run build"
   },
   "bin": "dist/cli.js",
   "files": [
