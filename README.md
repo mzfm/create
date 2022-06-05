@@ -1,4 +1,4 @@
-# Create @mzfm
+# Create MZFM Plugin
 
 NPM initializer for MZFM plugins.
 
@@ -7,7 +7,7 @@ NPM initializer for MZFM plugins.
 ## Usage
 
 ```bash
-npm init @mzfm <name>
+npm exec github:@mzfm/create <name>
 ```
 
 ## License

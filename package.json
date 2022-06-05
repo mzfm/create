@@ -1,5 +1,5 @@
 {
-  "name": "@mzfm/create-plugin",
+  "name": "@mzfm/create",
   "description": "NPM initializer for MZFM plugins.",
   "version": "1.0.0",
   "author": "Vilja <i@vilja.me>",
@@ -9,11 +9,10 @@
     "dev": "tsup src/cli.ts --watch",
     "prepublishOnly": "npm run clean && npm run build",
     "lint": "eslint --ext .js,.ts ./",
-    "prettier": "prettier --write ./src"
+    "prettier": "prettier --write ./src",
+    "install": "npm run build"
   },
-  "bin": {
-    "@mzfm/create-plugin": "dist/cli.js"
-  },
+  "bin": "dist/cli.js",
   "files": [
     "dist",
     "templates"
