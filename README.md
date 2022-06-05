@@ -7,7 +7,7 @@ NPM initializer for MZFM plugins.
 ## Usage
 
 ```bash
-npm exec github:@mzfm/create <name>
+npm init @mzfm <name>
 ```
 
 ## License
