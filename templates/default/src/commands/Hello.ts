@@ -18,7 +18,7 @@ export const Hello: MZFMCommand<HelloArgs> = {
       }
     )
   },
-  run: function (ctx, args) {
+  run: function (this: MZFMInterpreter, args, ctx) {
     const { name } = args
     console.log(`Hello, ${name}!`)
   },
