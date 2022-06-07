@@ -6,7 +6,6 @@ export interface HelloArgs {
 }
 
 export const Hello: MZFMCommand<HelloArgs> = {
-  setGlobal: true,
   initialize: (commandName: string) => {
     console.log(`Initializing ${commandName}`)
     overrideMethod(
