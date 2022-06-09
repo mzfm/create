@@ -1,7 +1,7 @@
 {
   "name": "@mzfm/create",
   "description": "NPM initializer for MZFM plugins.",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "Vilja <i@vilja.me>",
   "scripts": {
     "build": "tsup src/cli.ts --minify",
