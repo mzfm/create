@@ -1,7 +1,7 @@
 import { PluginDocs } from "@mzfm/common"
-import { DOCS as Hello } from "./commands/Hello"
-import { PLUGIN } from "./plugin"
-import packageConfig from "../package.json"
+import { DOCS as Hello } from "../docs/commands/Hello"
+import { PLUGIN } from "../plugin"
+import packageConfig from "../../package.json"
 
 const { name: projectName, author, description, version } = packageConfig
 
